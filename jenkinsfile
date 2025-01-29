@@ -1,0 +1,14 @@
+pipline{
+agent any
+stages{
+stage('BUild'){
+stop{
+nodejs('Node')
+{
+echo 'Building Application....'
+sh 'npm install'
+}
+}
+}
+}
+}
